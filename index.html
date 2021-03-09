@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+		<script type='text/javascript' src='//www.midijs.net/lib/midi.js'></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
+    <!--<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>-->
     <title>OnlyJakes</title>
-    <script>
-      // evil hack to play midi file on load
-      window.onload = function () {
-        setTimeout(function () {
-          const midi = document.querySelector("midi-player");
-          midi.playButton.click();
-          console.log('BORN FREE');
-        }, 3000);
-      };
-    </script>
   </head>
-  <body>
+  <body onload="MIDIjs.play("usa.mid")">
     <h1>OnlyJakes.com</h1>
     <marquee>Welcome to only Jakes, where there are only Jakes.</marquee>
     <img src="pika1.gif" alt="construction" class="center" />
-    <midi-player src="usa.mid" sound-font id="test"> </midi-player>
   </body>
 </html>
