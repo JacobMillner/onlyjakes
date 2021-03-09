@@ -10,7 +10,9 @@
     <script>
       // evil hack to play midi file on load
       window.onload = function () {
-        document.querySelector("midi-player").playButton.click();
+        setTimeout(function () {
+          document.querySelector("midi-player").playButton.click();
+        }, 2000);
       };
     </script>
   </head>
