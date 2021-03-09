@@ -1,0 +1,37 @@
+body {
+  background-image: url(https://bit.ly/2RDgE9B);
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  animation: blinkingText 1s infinite;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: red;
+  }
+  20% {
+    color: pink;
+  }
+  40% {
+    color: purple;
+  }
+  60% {
+    color: blue;
+  }
+  80% {
+    color: yellow;
+  }
+  100% {
+    color: green;
+  }
+}
