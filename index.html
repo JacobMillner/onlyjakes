@@ -11,8 +11,9 @@
       // evil hack to play midi file on load
       window.onload = function () {
         setTimeout(function () {
-          document.querySelector("midi-player").playButton.click();
-        }, 2000);
+          const midi = document.querySelector("midi-player");
+          midi.playButton.click();
+        }, 3000);
       };
     </script>
   </head>
